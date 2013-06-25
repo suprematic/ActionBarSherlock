@@ -138,6 +138,10 @@ public class ActionBarView extends AbsActionBarView {
     View mExpandedActionView;
 
     Window.Callback mWindowCallback;
+    
+    public Window.Callback getCallback() {
+    	return mWindowCallback;
+    }
 
     @SuppressWarnings("rawtypes")
     private final IcsAdapterView.OnItemSelectedListener mNavItemSelectedListener =
